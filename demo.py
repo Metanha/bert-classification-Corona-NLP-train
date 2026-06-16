@@ -10,11 +10,19 @@ data=pd.read_csv("data/Corona_NLP_train.csv", encoding="latin1")
 
 data["Sentiment"]=data["Sentiment"].str.replace("Extremely ", "", regex=False)
 
+<<<<<<< HEAD
 import pandas as pd
 import torch
 import gradio as gr
 from transformers import AutoTokenizer
 from model import SentimentModel
+=======
+"""
+MODEL_PATH         = "checkpoints/best_model.pth"
+MODEL_NAME         = "google-bert/bert-base-uncased"
+MAX_LENGTH         = 128
+LABELS             = {0: "Neutral", 1: "Positive", 2: "Negative"}
+>>>>>>> origin/feature-training
 
 
 # ════════════════════════════════════════════
